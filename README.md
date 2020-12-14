@@ -1,25 +1,30 @@
 
-mini-project (web)
-System Programming, Cloud Computing (2nd Semester 202i0. Integrated Mini Projec#) 개발 환경 : 우분투 리눅스 20.04
+# mini-project (web)
+
+System Programming, Cloud Computing (2nd Semester 202i0. Integrated Mini Projec#)
+
+개발 환경 : 우분투 리눅스 20.04
+
 사용한 클라우드 서비스 : Amazon AWS (Rekognition, Cognito, EC2)
 
 유저가 인물 이미지를 업로드하면 그 인물의 이름과 인물에 대한 imdb 혹은 구글 검색 결 과 링크를 반환 해 주는 웹사이트
 
 A flask app deployed with nginx using gunicorn, amazon EC2
 
-설명
+----------------------------------------------------------------------------------------------------------
+
+## 설명
 
 
-
-A. 프로젝트 명
+#### A. 프로젝트 명
 
 Celebrity finder
 
-B. 프로젝트 멤버 이름 및 멤버 별로 담당한 파트에 대한 소개
+#### B. 프로젝트 멤버 이름 및 멤버 별로 담당한 파트에 대한 소개
 
 프로젝트 멤버 이름 :박지원
  담당한 파트 : 전체
-C. 프로젝트 소개 및 개발 내용 소개
+#### C. 프로젝트 소개 및 개발 내용 소개
 
 프로젝트 목적 : 한 학기 동안 시스템 프로그래밍과 클라우드 컴퓨팅 수업을 들으면서 배웠던 개념들을 이용해서 웹사이트를 만들어 보면서 배운 내용을 활용할 수 있는 능력을 기른다. 리 눅스 개발환경에서 AWS 가 제공하는 클라우드 서비스를 활용하여 실제로 현실에서 사용 가 능한 애플리케이션을 제작한다.
 
@@ -44,7 +49,9 @@ C. 프로젝트 소개 및 개발 내용 소개
 프로세스를 다시 시작하고, nginx 서버에 대한 액세스를 허용하도록 방화벽을 조정함 (sudo ufw enable 'Nginx Full')* 웹 브라우저에서 서버의 도메인 이름으로 이동하면 웹 사이트를 볼 수 있다.
 
 D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
+
  클라이언트 측
+ 
 ![alt text](https://i.ibb.co/MVrdnMP/4.png)
 
 
@@ -53,6 +60,7 @@ D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 • AWS Rekognition : 유명인사 인지 API 서비스 제공
 
 • HTML 파일 : 사용자가 접속했을 때 rendering 되는 웹페이지 서버 측
+
 ![alt text](https://i.ibb.co/HYXz1FJ/5.png)
 
 • flask : 사용한 웹 앱 프레임워크
@@ -66,7 +74,9 @@ D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 • gunicorn : 웹 애플리케이션 코드를 실행하는 Python WSGI 서버. nginx 와 flask 의 중간자 역할 수행
 
 E. 개발 결과물을 사용하는 방법 소개 (+ 프로그램 구동 화면 스 크린 샷 첨부)
- 서버 구동
+
+**서버 구동**
+
 ![alt text](https://i.ibb.co/sKSsbJr/1.png)
 
 
@@ -76,9 +86,12 @@ E. 개발 결과물을 사용하는 방법 소개 (+ 프로그램 구동 화면 
 
 aws ec2 인스턴스 구동 ---> system unit file 의 설정에 의해서 자동적으로 guniconr, flaskapp 서비스 실행.
 
+![alt text](https://i.ibb.co/yPt14GL/2.png)
 
-site-available 서버블록에 저장해준 서버 dns 이름으로 웹사이트에 접속 가능 클라이언트 측
- 	![alt text](https://i.ibb.co/yPt14GL/2.png)
+site-available 서버블록에 저장해준 서버 dns 이름으로 웹사이트에 접속 가능
+
+**클라이언트 측**
+ 	![alt text](https://i.ibb.co/MfLq6Vn/3.png)
 
 
 F. 개발 결과물의 필요성 및 활용방안
