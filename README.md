@@ -50,7 +50,7 @@ Celebrity finder
 
 D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 
- 클라이언트 측
+**클라이언트 측**
  
 ![alt text](https://i.ibb.co/MVrdnMP/4.png)
 
@@ -59,7 +59,9 @@ D. 프로젝트 개발 결과물 소개 (+ 다이어그램)
 
 • AWS Rekognition : 유명인사 인지 API 서비스 제공
 
-• HTML 파일 : 사용자가 접속했을 때 rendering 되는 웹페이지 서버 측
+• HTML 파일 : 사용자가 접속했을 때 rendering 되는 웹페이지 
+
+**서버 측*
 
 ![alt text](https://i.ibb.co/HYXz1FJ/5.png)
 
